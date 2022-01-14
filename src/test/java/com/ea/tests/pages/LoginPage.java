@@ -15,14 +15,14 @@ public final class LoginPage extends BasePage{
 	
 	public LoginPage enterUserName(String username) throws Exception
 	{
-		sendKeys(textboxusername, username, WaitType.PRESENCE,"username");
+		sendKeys(textboxusername, username, WaitType.PRESENCE,"textboxusername");
 		ExtentLogger.pass("Entered Username");
 		return this;
 	}
 	
 	public LoginPage enterPassword(String password) throws Exception
 	{
-		sendKeys(textboxpassword,password, WaitType.PRESENCE,"password");
+		sendKeys(textboxpassword,password, WaitType.PRESENCE,"textboxpassword");
 		ExtentLogger.pass("Entered Password");
 		return this;
 	}
@@ -30,7 +30,7 @@ public final class LoginPage extends BasePage{
 	public LoginPage clickLoginButton() throws Exception
 	{
 		
-		click(buttonlogin, WaitType.CLICKABLE,"loginbutton");
+		click(buttonlogin, WaitType.CLICKABLE,"buttonlogin");
 		ExtentLogger.pass("Clicked Login Button");
 		return this;
 	}

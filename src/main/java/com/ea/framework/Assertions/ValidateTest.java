@@ -1,4 +1,4 @@
-package com.ea.framework.Assertions;
+package com.ea.framework.assertions;
 
 import org.openqa.selenium.By;
 

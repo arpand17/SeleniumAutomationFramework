@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-11T19:24:56 IST" name="Suite" finished-at="2022-01-11T19:25:04 IST" duration-ms="8674">
+  <suite started-at="2022-01-14T15:21:18 IST" name="Suite" finished-at="2022-01-14T15:21:29 IST" duration-ms="11003">
     <groups>
     </groups>
-    <test started-at="2022-01-11T19:24:56 IST" name="EA Test" finished-at="2022-01-11T19:25:04 IST" duration-ms="8674">
+    <test started-at="2022-01-14T15:21:18 IST" name="EA Test" finished-at="2022-01-14T15:21:29 IST" duration-ms="11003">
       <class name="com.ea.tests.tests.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ea.tests.tests.HomePageTest@1dde4cb2]" started-at="2022-01-11T19:24:56 IST" name="setup" finished-at="2022-01-11T19:25:01 IST" duration-ms="5466" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ea.tests.tests.HomePageTest@56620197]" started-at="2022-01-14T15:21:18 IST" name="setup" finished-at="2022-01-14T15:21:24 IST" duration-ms="6000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginPageNavigation()[pri:0, instance:com.ea.tests.tests.HomePageTest@1dde4cb2]" started-at="2022-01-11T19:25:01 IST" name="verifyLoginPageNavigation" description="Verifies user is able to navigate to login page when user clicks on login link" finished-at="2022-01-11T19:25:03 IST" duration-ms="1025" status="PASS">
+        <test-method signature="verifyLoginPageNavigation()[pri:0, instance:com.ea.tests.tests.HomePageTest@56620197]" started-at="2022-01-14T15:21:24 IST" name="verifyLoginPageNavigation" description="Verifies user is able to navigate to login page when user clicks on login link" finished-at="2022-01-14T15:21:27 IST" duration-ms="2491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ea.tests.tests.HomePageTest@1dde4cb2]" started-at="2022-01-11T19:25:03 IST" name="tearDown" finished-at="2022-01-11T19:25:03 IST" duration-ms="105" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ea.tests.tests.HomePageTest@56620197]" started-at="2022-01-14T15:21:27 IST" name="tearDown" finished-at="2022-01-14T15:21:28 IST" duration-ms="1117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ea.tests.tests.HomePageTest -->
       <class name="com.ea.tests.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ea.tests.tests.LoginPageTest@a514af7]" started-at="2022-01-11T19:24:56 IST" name="setup" finished-at="2022-01-11T19:25:01 IST" duration-ms="5252" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ea.tests.tests.LoginPageTest@4fb0f2b9]" started-at="2022-01-14T15:21:18 IST" name="setup" finished-at="2022-01-14T15:21:24 IST" duration-ms="5998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.ea.tests.tests.LoginPageTest@a514af7]" started-at="2022-01-11T19:25:01 IST" name="loginTest" description="Verifies user is able to login when user enters correct password and username and click on login button " finished-at="2022-01-11T19:25:04 IST" duration-ms="2628" status="FAIL">
+        <test-method signature="loginTest()[pri:0, instance:com.ea.tests.tests.LoginPageTest@4fb0f2b9]" started-at="2022-01-14T15:21:24 IST" name="loginTest" description="Verifies user is able to login when user enters correct password and username and click on login button " finished-at="2022-01-14T15:21:28 IST" duration-ms="3595" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Home - Execute Automation Employee App] but found [Login - Execute Automation Employee App]]]>
@@ -38,7 +38,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.ea.tests.tests.LoginPageTest.loginTest(LoginPageTest.java:28)
+at com.ea.tests.tests.LoginPageTest.loginTest(LoginPageTest.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,7 +60,7 @@ at java.base/java.lang.Thread.run(Thread.java:831)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ea.tests.tests.LoginPageTest@a514af7]" started-at="2022-01-11T19:25:04 IST" name="tearDown" finished-at="2022-01-11T19:25:04 IST" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ea.tests.tests.LoginPageTest@4fb0f2b9]" started-at="2022-01-14T15:21:28 IST" name="tearDown" finished-at="2022-01-14T15:21:29 IST" duration-ms="727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

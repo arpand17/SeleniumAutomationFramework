@@ -11,12 +11,15 @@ public final class FrameworkConstants {
 	
 	private static final String USERDIR=System.getProperty("user.dir");
 	private static final String RESOURCESPATH = USERDIR+"/src/test/resources";
-	private static final String CONFIGFILEPATH = RESOURCESPATH +"/config/GlobalConfig.properties";
+	private static final String CONFIGFILE = RESOURCESPATH +"/config/GlobalConfig.properties";
 	private static final String REPORTPATH = System.getProperty("user.dir") +"/extent-test-output";
 	private static String reportFilePath="";
 	private static final int EXPLICITWAIT=10;
-	private static final String TESTDATAPATH = RESOURCESPATH +"/testdata/testdata.xlsx";
-	private static final String RUNMANAGERPATH = USERDIR +"/RunManager.xlsx";
+	private static final String TESTDATAFILE = RESOURCESPATH +"/testdata/testdata.xlsx";
+	private static final String RUNMANAGERFILE = USERDIR +"/RunManager.xlsx";
+	private static final String LOGSPATH = System.getProperty("user.dir") +"/test-logs/";
+	private static final String TEMPLOGSPATH = System.getProperty("user.dir") +"/logs";
+	private static String logFile="TestExecutionLog";
 
 
 	
@@ -29,7 +32,7 @@ public final class FrameworkConstants {
 	
 	public static String getConfigFilePath()
 	{
-		return CONFIGFILEPATH;
+		return CONFIGFILE;
 	}
 	
 	public static String getReportPath() 
@@ -61,12 +64,27 @@ public final class FrameworkConstants {
 	
 	public static String getTestData()
 	{
-		return TESTDATAPATH;
+		return TESTDATAFILE;
 	}
 	
 	public static String getRunManager()
 	{
-		return RUNMANAGERPATH;
+		return RUNMANAGERFILE;
+	}
+	
+	public static String getLogPath()
+	{
+		return LOGSPATH;
+	}
+	
+	public static String getTempLogPath()
+	{
+		return TEMPLOGSPATH;
+	}
+	
+	public static String getLogName()
+	{
+		return LOGSPATH+logFile;
 	}
 	
 }

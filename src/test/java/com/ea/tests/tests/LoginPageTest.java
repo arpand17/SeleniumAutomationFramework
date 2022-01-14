@@ -18,7 +18,6 @@ public final class LoginPageTest extends BaseTest{
 	@Test
 	private void loginTest() throws Exception
 	{
-		System.out.println(ReadTestData.getTestData("testname"));
 		LoginPage lp = new LoginPage();
 		String actualTitle = lp.enterUserName(ReadTestData.getTestData("username"))
 							   //.enterPassword(ReadTestData.getTestData("password"))

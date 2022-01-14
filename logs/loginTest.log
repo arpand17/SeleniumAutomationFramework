@@ -1,0 +1,9 @@
+[INFO ] 2022-01-14 15:21:25.638 - com.ea.framework.logger.LoggerManager:startTestLog:===================================================================
+[INFO ] 2022-01-14 15:21:25.719 - com.ea.framework.logger.LoggerManager:startTestLog:Execution Started for : loginTest
+[INFO ] 2022-01-14 15:21:25.884 - com.ea.framework.base.BasePage:sendKeys:admin is entered successfully in textboxusername
+[INFO ] 2022-01-14 15:21:25.982 - com.ea.framework.base.BasePage:sendKeys:password1 is entered successfully in textboxpassword
+[INFO ] 2022-01-14 15:21:28.266 - com.ea.framework.base.BasePage:click:buttonlogin is clicked
+[INFO ] 2022-01-14 15:21:28.434 - com.ea.framework.listeners.ListenerClass:onTestFailure:loginTest is failed
+[INFO ] 2022-01-14 15:21:28.436 - com.ea.framework.listeners.ListenerClass:onTestFailure:java.lang.AssertionError: expected [Home - Execute Automation Employee App] but found [Login - Execute Automation Employee App]
+[INFO ] 2022-01-14 15:21:28.436 - com.ea.framework.logger.LoggerManager:endTestLog:Execution Completed for : loginTest
+[INFO ] 2022-01-14 15:21:28.436 - com.ea.framework.logger.LoggerManager:endTestLog:===================================================================
