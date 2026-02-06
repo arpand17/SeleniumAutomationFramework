@@ -1,6 +1,6 @@
-[INFO ] 2022-01-14 15:21:25.720 - com.ea.framework.logger.LoggerManager:startTestLog:===================================================================
-[INFO ] 2022-01-14 15:21:25.725 - com.ea.framework.logger.LoggerManager:startTestLog:Execution Started for : verifyLoginPageNavigation
-[INFO ] 2022-01-14 15:21:27.163 - com.ea.framework.base.BasePage:click:linkLogin is clicked
-[INFO ] 2022-01-14 15:21:27.171 - com.ea.framework.listeners.ListenerClass:onTestSuccess:verifyLoginPageNavigation is passed
-[INFO ] 2022-01-14 15:21:27.172 - com.ea.framework.logger.LoggerManager:endTestLog:Execution Completed for : verifyLoginPageNavigation
-[INFO ] 2022-01-14 15:21:27.172 - com.ea.framework.logger.LoggerManager:endTestLog:===================================================================
+[INFO ] 2026-02-06 09:07:54.721 - com.ea.framework.logger.LoggerManager:startTestLog:===================================================================
+[INFO ] 2026-02-06 09:07:54.724 - com.ea.framework.logger.LoggerManager:startTestLog:Execution Started for : verifyLoginPageNavigation
+[INFO ] 2026-02-06 09:07:55.605 - com.ea.framework.base.BasePage:click:linkLogin is clicked
+[INFO ] 2026-02-06 09:07:55.633 - com.ea.framework.listeners.ListenerClass:onTestSuccess:verifyLoginPageNavigation is passed
+[INFO ] 2026-02-06 09:07:55.633 - com.ea.framework.logger.LoggerManager:endTestLog:Execution Completed for : verifyLoginPageNavigation
+[INFO ] 2026-02-06 09:07:55.634 - com.ea.framework.logger.LoggerManager:endTestLog:===================================================================

@@ -1,17 +1,14 @@
 package com.ea.framework.driver;
 
-import java.util.Objects;
-
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeDriverService;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-
 import com.ea.framework.utils.PropertyUtils;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import java.util.Objects;
 
 public class Driver {
 
@@ -21,29 +18,26 @@ public class Driver {
 	public static void initializeBrowser() 
 	{
 		String browser = PropertyUtils.get("browser");
+
 		if(Objects.isNull(DriverManager.getDriver()))
 		{
 			if(browser.equalsIgnoreCase("Chrome"))
 			{
-				System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
-				WebDriverManager.chromedriver().setup();
-				DriverManager.setDriver(new ChromeDriver());
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--start-maximized");
+				DriverManager.setDriver(new ChromeDriver(options));
 			}
 			else if(browser.equalsIgnoreCase("Firefox"))
 			{
-				WebDriverManager.firefoxdriver().setup();
-				DriverManager.setDriver(new FirefoxDriver());
-			}
-			else if(browser.equalsIgnoreCase("IE"))
-			{
-				WebDriverManager.iedriver().setup();
-				DriverManager.setDriver(new InternetExplorerDriver());
+				FirefoxOptions options = new FirefoxOptions();
+				options.addArguments("--start-maximized");
+				DriverManager.setDriver(new FirefoxDriver(options));
 			}
 			else if(browser.equalsIgnoreCase("Edge"))
 			{
-				System.setProperty(EdgeDriverService.EDGE_DRIVER_LOG_PROPERTY, "false");
-				WebDriverManager.edgedriver().setup();
-				DriverManager.setDriver(new EdgeDriver());
+				EdgeOptions options = new EdgeOptions();
+				options.addArguments("--start-maximized");
+				DriverManager.setDriver(new EdgeDriver(options));
 			}
 			DriverManager.getDriver().manage().window().maximize();
 			DriverManager.getDriver().get(PropertyUtils.get("url"));

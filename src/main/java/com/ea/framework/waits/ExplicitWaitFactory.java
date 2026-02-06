@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.ea.framework.constants.FrameworkConstants;
 import com.ea.framework.driver.DriverManager;
 
+import java.time.Duration;
+
 public final class ExplicitWaitFactory {
 
 	private ExplicitWaitFactory() {}
@@ -17,17 +19,17 @@ public final class ExplicitWaitFactory {
 		WebElement element=null;
 		if(wait==WaitType.CLICKABLE)
 		{
-			element = new WebDriverWait(DriverManager.getDriver(), FrameworkConstants.getWaitTime())
+			element = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.getWaitTime()))
 			.until(ExpectedConditions.elementToBeClickable(by));
 		}
 		else if(wait==WaitType.PRESENCE)
 		{
-			element = new WebDriverWait(DriverManager.getDriver(), FrameworkConstants.getWaitTime())
+			element = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.getWaitTime()))
 			.until(ExpectedConditions.presenceOfElementLocated(by));
 		}
 		else if(wait==WaitType.VISIBLE)
 		{
-			element = new WebDriverWait(DriverManager.getDriver(), FrameworkConstants.getWaitTime())
+			element = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.getWaitTime()))
 			.until(ExpectedConditions.visibilityOfElementLocated(by));
 		}
 		else if(wait==WaitType.NONE)
